@@ -1,0 +1,66 @@
+{
+  "name": "sportsdata-golf",
+  "description": "A sportsdata.io API client specific to golf",
+  "version": "0.0.1",
+  "author": "Shaun Warman <shaunwarman1@gmail.com> (https://shaunwarman.com)",
+  "bugs": {
+    "url": "https://github.com/shaunwarman/sportsdata-golf/issues",
+    "email": "shaunwarman1@gmail.com"
+  },
+  "contributors": [
+    "Shaun Warman <shaunwarman1@gmail.com> (https://shaunwarman.com)"
+  ],
+  "dependencies": {
+    "got": "^11.8.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "ava": "latest",
+    "codecov": "latest",
+    "cross-env": "latest",
+    "eslint": "latest",
+    "eslint-config-xo-lass": "latest",
+    "fixpack": "latest",
+    "husky": "latest",
+    "lint-staged": "latest",
+    "nyc": "latest",
+    "remark-cli": "latest",
+    "remark-preset-github": "latest",
+    "xo": "latest"
+  },
+  "engines": {
+    "node": ">= 12"
+  },
+  "type": "module",
+  "homepage": "https://github.com/shaunwarman/sportsdata-golf",
+  "keywords": [
+    "lass",
+    "sportsdata-golf"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaunwarman/sportsdata-golf"
+  },
+  "scripts": {
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "lint": "npm run lint:js && npm run lint:md",
+    "lint:js": "xo",
+    "lint:md": "remark . -qfo",
+    "pretest": "npm run lint",
+    "test": "cross-env NODE_ENV=test ava",
+    "test-coverage": "cross-env NODE_ENV=test nyc npm run test"
+  },
+  "xo": {
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "prettier": true,
+    "space": true,
+    "extends": [
+      "xo-lass"
+    ]
+  }
+}
