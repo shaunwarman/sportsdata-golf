@@ -32,7 +32,6 @@
   "engines": {
     "node": ">= 12"
   },
-  "type": "module",
   "homepage": "https://github.com/shaunwarman/sportsdata-golf",
   "keywords": [
     "lass",

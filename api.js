@@ -1,4 +1,4 @@
-const API = {
+module.exports = {
   dFSSlates:
     'https://api.sportsdata.io/golf/v2/json/DfsSlatesByTournament/{tournamentid}',
   leaderboard:
@@ -52,5 +52,3 @@ const API = {
   tournamentOddsLineMovement:
     'https://api.sportsdata.io/v3/golf/odds/json/TournamentOddsLineMovement/{tournamentid}'
 };
-
-export default API;

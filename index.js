@@ -1,6 +1,6 @@
-import got from 'got';
+const got = require('got');
 
-import API from './api.js';
+const API = require('./api.js');
 
 class Golf {
   constructor() {
@@ -14,7 +14,7 @@ class Golf {
         if (typeof args !== 'object')
           throw new Error('arguments must be an object')
 
-        this.validate(name, args);
+        Golf.validate(name, args);
         endpoint = Golf.getEndpoint(endpoint, args);
         const response = await this.request(endpoint);
         return response;
@@ -52,4 +52,4 @@ class Golf {
   }
 }
 
-export default Golf;
+module.exports = Golf;
