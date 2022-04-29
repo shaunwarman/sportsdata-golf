@@ -1,7 +1,7 @@
 {
   "name": "sportsdata-golf",
   "description": "A sportsdata.io API client specific to golf",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Shaun Warman <shaunwarman1@gmail.com> (https://shaunwarman.com)",
   "bugs": {
     "url": "https://github.com/shaunwarman/sportsdata-golf/issues",
